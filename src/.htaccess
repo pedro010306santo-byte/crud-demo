@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+
+# Redireciona /api/users para api/users.php
+RewriteRule ^api/users$ api/users.php [L,QSA]
+RewriteRule ^api/users\?(.*)$ api/users.php?$1 [L,QSA]
