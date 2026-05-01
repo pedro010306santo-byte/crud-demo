@@ -3,7 +3,8 @@ FROM php:8.2-apache
 LABEL maintainer="seu-usuario"
 
 RUN apt update && apt install -y git \
-    && docker-php-ext-install json 2>/dev/null || true
+    && docker-php-ext-install json 2>/dev/null || true \
+    && apt autoclean
 
 # Habilita mod_rewrite para API REST
 RUN a2enmod rewrite
