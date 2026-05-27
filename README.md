@@ -1,4 +1,4 @@
-# 📦 CRUD Demo — GitHub Actions + Docker
+# 📦 CRUD Demo — GitHub Actions + Docker-novo
 
 Exemplo de aplicação PHP com CRUD completo, deploy automatizado via **GitHub Actions** e **Docker**.
 
