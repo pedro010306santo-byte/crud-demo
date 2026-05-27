@@ -32,9 +32,9 @@ Exemplo de aplicação PHP com CRUD completo, deploy automatizado via **GitHub A
 docker build -t crud-demo .
 
 # Rodar o container
-docker run -d -p 8080:80 --name crud-demo crud-demo
+docker run -d -p 80:80 --name crud-demo crud-demo
 
-# Acesse: http://localhost:8080
+# Acesse: http://localhost ou http://IP_DO_SERVIDOR
 ```
 
 ---
@@ -57,8 +57,8 @@ Vá em **Settings → Secrets and variables → Actions** e adicione:
 
 ```bash
 # Instale o Docker no servidor (Ubuntu)
-curl -fsSL https://get.docker.com | sh
-sudo usermod -aG docker $USER
+curl -fsSL https://get.docker.com | bash
+sudo usermod -aG docker $USER # Ambiente de desenvolvimento
 sudo reboot
 ```
 
